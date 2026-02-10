@@ -1,7 +1,11 @@
 ## LiveMedBench: A Live Medical Benchmark for LLMs
 
+[![Hugging Face Datasets](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-blue)](https://huggingface.co/datasets/JuelieYann/LiveMedBench/)
+
 LiveMedBench is a benchmark for evaluating large language models (LLMs) on **real‑world, live update medical data**.  
 It is designed to measure not only overall medical quality, but also **robustness over time** under a rubric‑based evaluation framework.
+
+**Data is available at:** [Hugging Face Dataset](https://huggingface.co/datasets/JuelieYann/LiveMedBench/)
 
 This repository contains:
 - **Inference scripts** for running LLMs on the benchmark  
@@ -29,11 +33,11 @@ You can plug in any OpenAI‑compatible chat model via its model name.
 
 ---
 
-## 2. Benchmark Challenges at a Glance
+## 2. Benchmark Challenges
 
 To better illustrate the motivation of LiveMedBench, we point out the challenge of current medical benchmarks:
 
-![LiveMedBench Overview and Challenges](fig/livemedbench_fig_1.pdf)
+![LiveMedBench Overview and Challenges](fig/livemedbench_fig_1.png)
 
 This figure highlights the **core challenges** LiveMedBench aims to capture:
 - **Live, time‑stamped medical cases** rather than static exam‑style questions.  
@@ -57,7 +61,7 @@ LiveMedBench assumes the following data layout (you may adapt paths as needed):
 
   ```json
   {
-    "case_id": "109002500",
+    "case_id": "1",
     "post_time": "2023-04-16T00:00:00",
     "narrative": "...",
     "core_request": "...",
@@ -74,8 +78,6 @@ LiveMedBench assumes the following data layout (you may adapt paths as needed):
     ]
   }
   ```
-
-> **Note**: The data is available at [URL].
 
 ---
 
@@ -190,7 +192,7 @@ Each evaluation file `evaluation_results_<model>.json` is a list of:
 
 We summarize benchmark results and trends in the following figure:
 
-![LiveMedBench Benchmark Results](fig/livemedbench_fig_2.pdf)
+![LiveMedBench Benchmark Results](fig/livemedbench_fig_2.png)
 
 ---
 
