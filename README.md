@@ -2,6 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2602.10367-b31b1b.svg)](https://arxiv.org/abs/2602.10367)
 [![Hugging Face Datasets](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-blue)](https://huggingface.co/datasets/JuelieYann/LiveMedBench/)
+[![Website](https://img.shields.io/badge/Website-LiveMedBench-green)](https://livemedbench.github.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **LiveMedBench** is a continuously updated, contamination-free, and rubric-based benchmark for evaluating LLMs on **real-world medical cases**. It is designed to measure not only overall medical quality, but also **robustness over time** and **alignment with physician judgment**.
