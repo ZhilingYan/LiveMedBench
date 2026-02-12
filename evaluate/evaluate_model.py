@@ -5,9 +5,9 @@ Evaluate model responses on LiveMedBench using a rubric and GPT‑4.1 as the eva
 
 Basic usage:
     python evaluate_model.py \\
-        --rubric-file data/merged_data_rubric.json \\
+        --rubric-file data/LiveMedBench_v202601.json \\
         --model-result-file outputs/gpt_results.json \\
-        --output-file outputs/evaluation_results_gpt_4_1.json \\
+        --output-file outputs/evaluation_results_gpt.json \\
         --response-field model_response
 
 Environment:
@@ -370,7 +370,6 @@ def process_evaluations(
 
         if case_id_str in existing_evaluations:
             print(f"[{idx+1}/{total_cases}] ⏭ Skip already evaluated case: {case_id_str}")
-            results.append(existing_evaluations[case_id_str])
             continue
 
         processed_count += 1
@@ -412,7 +411,6 @@ def process_evaluations(
                 continue
             criterion = rubric_item.get("criterion", "")
             points = rubric_item.get("points", 0)
-            axe = rubric_item.get("axe", "")
 
             if not criterion:
                 continue
@@ -427,7 +425,6 @@ def process_evaluations(
             model_evaluations[f"rubric_{rubric_idx}"] = {
                 "criterion": criterion,
                 "points": points,
-                "axe": axe,
                 "score": score,
                 "weighted_score": points * score,
             }
