@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveMedBench - A Live Medical Benchmark for LLMs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>LiveMedBench</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="https://arxiv.org/abs/2602.10367" target="_blank">Paper</a></li>
+                <li><a href="https://github.com/ZhilingYan/LiveMedBench/" target="_blank">Code</a></li>
+                <li><a href="https://huggingface.co/datasets/JuelieYann/LiveMedBench" target="_blank">Data</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">LiveMedBench</h1>
+                <p class="hero-subtitle">A Live Medical Benchmark for Evaluating Large Language Models</p>
+                <div class="hero-description">
+                    <p>LiveMedBench is designed to measure not only <strong>overall medical quality</strong>, 
+                    but also <strong>robustness over time</strong> under a rubric-based evaluation framework 
+                    using real-world, live-update medical data.</p>
+                </div>
+                <div class="hero-badges">
+                    <a href="https://huggingface.co/datasets/JuelieYann/LiveMedBench/" class="badge" target="_blank">
+                        <span>🤗</span> Hugging Face
+                    </a>
+                    <a href="https://github.com/ZhilingYan/LiveMedBench" class="badge" target="_blank">
+                        <span>📦</span> GitHub
+                    </a>
+                    <a href="https://arxiv.org/abs/2602.10367" class="badge" target="_blank">
+                        <span>📄</span> arXiv
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🕒</div>
+                    <h3>Live & Time-stamped</h3>
+                    <p>Real-world medical cases with temporal information, enabling evaluation of model robustness over time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Rubric-based Evaluation</h3>
+                    <p>Objective, criterion-specific evaluation framework aligned with physician assessment standards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Real-world Cases</h3>
+                    <p>Authentic medical consultation scenarios rather than static exam-style questions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Comprehensive Metrics</h3>
+                    <p>Per-month and overall performance metrics for temporal trend analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pipeline Section -->
+    <section id="pipeline" class="pipeline-section">
+        <div class="container">
+            <h2 class="section-title">LiveMedBench Pipeline</h2>
+            <div class="pipeline-content">
+                <div class="pipeline-image">
+                    <img src="img/LiveMedBench_Workflow_final.png" alt="LiveMedBench Pipeline">
+                </div>
+                <div class="pipeline-steps">
+                    <div class="pipeline-step" data-tooltip="Continuous mining of bilingual clinical data from verified online medical communities.">
+                        <div class="step-icon">1</div>
+                        <h3>Data Collection</h3>
+                        <div class="step-hover-hint">Hover for details</div>
+                    </div>
+                    <div class="pipeline-step" data-tooltip="A hierarchical framework (Screener, Validator, Controller) structures and validates data against medical guidelines.">
+                        <div class="step-icon">2</div>
+                        <h3>Multi-Agent Curation</h3>
+                        <div class="step-hover-hint">Hover for details</div>
+                    </div>
+                    <div class="pipeline-step" data-tooltip="Automated generation of case-specific evaluation rubrics with bipolar criteria and weighted axes.">
+                        <div class="step-icon">3</div>
+                        <h3>Rubric Generation</h3>
+                        <div class="step-hover-hint">Hover for details</div>
+                    </div>
+                    <div class="pipeline-step" data-tooltip="Objective evaluation of LLMs using the generated rubrics via a rubric-based grader.">
+                        <div class="step-icon">4</div>
+                        <h3>Model Evaluation</h3>
+                        <div class="step-hover-hint">Hover for details</div>
+                    </div>
+                    <div class="pipeline-step" data-tooltip="Rigorous human quality assurance to ensure clinical alignment.">
+                        <div class="step-icon">5</div>
+                        <h3>Human Assessment</h3>
+                        <div class="step-hover-hint">Hover for details</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Dataset Section -->
+    <section id="dataset" class="dataset-section">
+        <div class="container">
+            <h2 class="section-title">Dataset Overview</h2>
+            <div class="dataset-image">
+                <img src="https://github.com/ZhilingYan/LiveMedBench/raw/main/fig/livemedbench_fig_1.png" alt="LiveMedBench Dataset Statistics" style="width: 100%; max-width: 1200px; margin: 2rem auto; display: block; border-radius: 12px; box-shadow: var(--shadow-md);">
+            </div>
+            <div class="dataset-stats">
+                <div class="stat-card">
+                    <div class="stat-number">2,756</div>
+                    <div class="stat-label">Medical Cases</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">38</div>
+                    <div class="stat-label">Medical Specialties</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2023-2026</div>
+                    <div class="stat-label">Time Range</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">16,702</div>
+                    <div class="stat-label">Evaluation Criterion</div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="leaderboard-section">
+        <div class="container">
+            <h2 class="section-title">Model Performance</h2>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                Last updated: <span id="last-updated"></span>
+            </p>
+            <div class="leaderboard-container">
+                <div class="leaderboard-tabs">
+                    <button class="tab-btn active" data-tab="overall">Overall Performance</button>
+                    <button class="tab-btn" data-tab="aftercutoff">After Cutoff Date</button>
+                </div>
+                <div class="leaderboard-filters">
+                    <button class="filter-btn active" data-filter="all">All Models</button>
+                    <button class="filter-btn" data-filter="api">API Access</button>
+                    <button class="filter-btn" data-filter="open">Open Access</button>
+                    <button class="filter-btn" data-filter="medical">Medical</button>
+                </div>
+                <div class="leaderboard-table-wrapper">
+                    <div class="leaderboard-table" id="overall-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Model</th>
+                                    <th>Type</th>
+                                    <th>Overall Score</th>
+                                </tr>
+                            </thead>
+                            <tbody id="leaderboard-body-overall">
+                                <!-- Overall leaderboard data will be loaded here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="leaderboard-table" id="aftercutoff-table" style="display: none;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Model</th>
+                                    <th>Type</th>
+                                    <th>After Cutoff Score</th>
+                                </tr>
+                            </thead>
+                            <tbody id="leaderboard-body-aftercutoff">
+                                <!-- After Cutoff leaderboard data will be loaded here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="benchmark-image">
+                <img src="https://github.com/ZhilingYan/LiveMedBench/raw/main/fig/livemedbench_fig_2.png" alt="LiveMedBench Benchmark Results">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 LiveMedBench. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://arxiv.org/abs/2602.10367" target="_blank">Paper</a>
+                <a href="https://github.com/ZhilingYan/LiveMedBench" target="_blank">Code</a>
+                <a href="https://huggingface.co/datasets/JuelieYann/LiveMedBench/" target="_blank">Data</a>
+                <a href="#leaderboard">Leaderboard</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

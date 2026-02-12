@@ -1,0 +1,309 @@
+{
+  "models": [
+    {
+      "rank": 1,
+      "name": "GPT-5.2",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.3923,
+      "after_cutoff": 0.3831
+    },
+    {
+      "rank": 2,
+      "name": "GPT-5.1",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.3845,
+      "after_cutoff": 0.392
+    },
+    {
+      "rank": 3,
+      "name": "GPT-5",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.2858,
+      "after_cutoff": 0.2858
+    },
+    {
+      "rank": 4,
+      "name": "Grok-4.1",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.2828,
+      "after_cutoff": 0.2749
+    },
+    {
+      "rank": 5,
+      "name": "Baichuan-M3",
+      "type": "Open Access",
+      "is_medical": true,
+      "overall": 0.2561,
+      "after_cutoff": 0.2454
+    },
+    {
+      "rank": 6,
+      "name": "GPT-OSS 120B",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.2503,
+      "after_cutoff": 0.2564
+    },
+    {
+      "rank": 7,
+      "name": "GLM-4.5",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.2246,
+      "after_cutoff": 0.218
+    },
+    {
+      "rank": 8,
+      "name": "Gemini 3 Flash",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.2167,
+      "after_cutoff": 0.2162
+    },
+    {
+      "rank": 9,
+      "name": "Gemini 3 Pro",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.1829,
+      "after_cutoff": 0.1858
+    },
+    {
+      "rank": 10,
+      "name": "GLM-4.6",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.1759,
+      "after_cutoff": 0.1453
+    },
+    {
+      "rank": 11,
+      "name": "Claude 3.7 Sonnet",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.1699,
+      "after_cutoff": 0.1653
+    },
+    {
+      "rank": 12,
+      "name": "Gemini 2.5 Pro",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.1606,
+      "after_cutoff": 0.1562
+    },
+    {
+      "rank": 13,
+      "name": "Qwen3-14B",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.1545,
+      "after_cutoff": 0.1405
+    },
+    {
+      "rank": 14,
+      "name": "GPT-4.1",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.1379,
+      "after_cutoff": 0.134
+    },
+    {
+      "rank": 15,
+      "name": "QwQ-32B",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.135,
+      "after_cutoff": 0.1319
+    },
+    {
+      "rank": 16,
+      "name": "GLM-4.7 Thinking",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.1335,
+      "after_cutoff": 0.1034
+    },
+    {
+      "rank": 17,
+      "name": "DeepSeek-R1",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.1329,
+      "after_cutoff": 0.1383
+    },
+    {
+      "rank": 18,
+      "name": "Qwen2.5-72B-Ins",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.1276,
+      "after_cutoff": 0.1271
+    },
+    {
+      "rank": 19,
+      "name": "GLM-4.5 Air",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.1105,
+      "after_cutoff": 0.0869
+    },
+    {
+      "rank": 20,
+      "name": "Baichuan-M2",
+      "type": "Open Access",
+      "is_medical": true,
+      "overall": 0.1078,
+      "after_cutoff": 0.0792
+    },
+    {
+      "rank": 21,
+      "name": "GPT-4.1 Mini",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.1036,
+      "after_cutoff": 0.1016
+    },
+    {
+      "rank": 22,
+      "name": "DeepSeek-V3.2",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.1028,
+      "after_cutoff": 0.0729
+    },
+    {
+      "rank": 23,
+      "name": "Claude 4 Sonnet",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.1013,
+      "after_cutoff": 0.0789
+    },
+    {
+      "rank": 24,
+      "name": "DeepSeek-V3.1",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.0959,
+      "after_cutoff": 0.0751
+    },
+    {
+      "rank": 25,
+      "name": "HuatuoGPT-o1",
+      "type": "Open Access",
+      "is_medical": true,
+      "overall": 0.0712,
+      "after_cutoff": 0.0594
+    },
+    {
+      "rank": 26,
+      "name": "Qwen2.5-32B-Ins",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.0641,
+      "after_cutoff": 0.0621
+    },
+    {
+      "rank": 27,
+      "name": "Gemini 2.5 Flash",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.064,
+      "after_cutoff": 0.0532
+    },
+    {
+      "rank": 28,
+      "name": "Med-Gemma 27B",
+      "type": "Open Access",
+      "is_medical": true,
+      "overall": 0.059,
+      "after_cutoff": 0.0298
+    },
+    {
+      "rank": 29,
+      "name": "Kimi K2",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.0585,
+      "after_cutoff": 0.0186
+    },
+    {
+      "rank": 30,
+      "name": "Lingshu-32B",
+      "type": "Open Access",
+      "is_medical": true,
+      "overall": 0.0577,
+      "after_cutoff": 0.03
+    },
+    {
+      "rank": 31,
+      "name": "Qwen3-30B",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.0559,
+      "after_cutoff": 0.0391
+    },
+    {
+      "rank": 32,
+      "name": "Med-Gemma 1.5",
+      "type": "Open Access",
+      "is_medical": true,
+      "overall": 0.0537,
+      "after_cutoff": 0.0312
+    },
+    {
+      "rank": 33,
+      "name": "GLM-4",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.0522,
+      "after_cutoff": 0.0245
+    },
+    {
+      "rank": 34,
+      "name": "GPT-4o",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.0506,
+      "after_cutoff": 0.0479
+    },
+    {
+      "rank": 35,
+      "name": "Qwen3-235B",
+      "type": "Open Access",
+      "is_medical": false,
+      "overall": 0.0505,
+      "after_cutoff": 0.0225
+    },
+    {
+      "rank": 36,
+      "name": "Lingshu-7B",
+      "type": "Open Access",
+      "is_medical": true,
+      "overall": 0.0377,
+      "after_cutoff": 0.0135
+    },
+    {
+      "rank": 37,
+      "name": "Gemini 2.0 Flash",
+      "type": "API Access",
+      "is_medical": false,
+      "overall": 0.0271,
+      "after_cutoff": 0.0204
+    },
+    {
+      "rank": 38,
+      "name": "Med-Gemma 4B",
+      "type": "Open Access",
+      "is_medical": true,
+      "overall": 0,
+      "after_cutoff": 0
+    }
+  ],
+  "last_updated": "2026-02-12"
+}
