@@ -107,8 +107,6 @@ The script `evaluate/run_model.py` runs a chat model on all cases and saves the 
 ### 5.1 Basic Usage
 
 ```bash
-cd /data2/zhiling/Code/llm/LiveMedBench
-
 python evaluate/run_model.py \
   --data-file data/merged_data.json \
   --output-file outputs/gpt_4_1_results.json \
