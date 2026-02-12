@@ -172,7 +172,7 @@ def calculate_model_scores(
         if not case_id or not isinstance(evaluations, dict):
             continue
 
-        rubric_info = rubric_mapping.get(case_id, {})
+        rubric_info = rubric_mapping.get(str(case_id), {})
         rubric_items = rubric_info.get("rubric_items", [])
         post_time = rubric_info.get("post_time", "")
 
