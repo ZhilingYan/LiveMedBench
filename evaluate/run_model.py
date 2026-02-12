@@ -5,9 +5,9 @@ Run a LLM (e.g., GPT-4.x/GPT-5.x) on the LiveMedBench.
 
 Basic usage:
     python run_model.py \
-        --data-file data/merged_data.json \
+        --data-file data/LiveMedBench_v202601.json \
         --output-file outputs/gpt_results.json \
-        --model gpt-4.1
+        --model gpt-5.2-2025-12-11 
 
 Environment:
     - Set your OpenAI API key via the standard environment variable:
@@ -61,7 +61,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--model",
         type=str,
-        default="gpt-4.1",
+        default="gpt-5.2-2025-12-11",
     )
     parser.add_argument(
         "--max-cases",
@@ -226,6 +226,7 @@ def process_cases(
         raw_resp, text, finish_reason = call_chat_model(client, model, prompt)
 
         record: Dict[str, Any] = {
+            "case_id": case_id,
             "post_time": case.get("post_time", ""),
             "narrative": narrative,
             "core_request": core_request,
@@ -240,7 +241,7 @@ def process_cases(
         processed_case_ids.add(case_id)
 
         # Periodic checkpointing
-        if processed_count % 10 == 0:
+        if processed_count % 1 == 0:
             save_results(results, output_path)
             print(
                 f"[checkpoint] Saved {len(results)} results "
