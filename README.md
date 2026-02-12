@@ -118,16 +118,6 @@ LiveMedBench/
 
 ---
 
-## TODO / Coming Soon
-
-We are actively working on releasing additional components of the LiveMedBench framework:
-
-- [ ] **Data Collection Pipeline** — Web scraping scripts for DXY, MedLive, iCliniq, and SDN platforms with post filtering protocol
-- [ ] **Multi-Agent Clinical Curation Framework** — Screener, Validator, and Controller agent implementations with RAG-based evidence verification
-- [ ] **Automated Rubric Generator** — Theme-guided fact extraction, bipolar criterion formulation, and axis assignment pipeline
-
----
-
 ## Quick Start
 
 ### 1. Environment Setup
