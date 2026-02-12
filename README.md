@@ -76,7 +76,7 @@ The LiveMedBench pipeline consists of five phases:
 | 1 | GPT-5.2 | Proprietary | **39.23** |
 | 2 | GPT-5.1 | Proprietary | 38.50 |
 | 3 | Grok-4.1 | Proprietary | 28.28 |
-| 4 | Baichuan M3 | Proprietary, Medical | 25.61 |
+| 4 | Baichuan M3 | Open-Source, Medical | 25.61 |
 | 5 | GPT-OSS 120B | Open-Source | 25.03 |
 | 6 | GLM-4.5 | Open-Source | 22.46 |
 | 7 | Gemini 3 Pro | Proprietary | 18.30 |
