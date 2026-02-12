@@ -152,34 +152,34 @@ Download the benchmark data from [Hugging Face](https://huggingface.co/datasets/
 
 ```bash
 python evaluate/run_model.py \
-  --data-file data/merged_data.json \
-  --output-file outputs/gpt_4_1_results.json \
-  --model gpt-4.1
+  --data-file data/LiveMedBench_v202601.json \
+  --output-file outputs/gpt_results.json \
+  --model gpt-5.2-2025-12-11
 ```
 
 Key arguments:
 - `--data-file`: Path to a JSON list of cases.
 - `--output-file`: Where to save model outputs.
 - `--model`: Any OpenAI-compatible chat model name.
-- `--max-cases` (optional): Limit the number of processed cases (for debugging).
+- `--max-cases` (optional): Limit the number of processed cases.
 - `--resume` (optional): Resume from an existing output file by `case_id`.
 
 ### 4. Rubric-based Evaluation with GPT-4.1
 
 ```bash
 python evaluate/evaluate_model.py \
-  --rubric-file data/merged_data_rubric.json \
-  --model-result-file outputs/gpt_4_1_results.json \
-  --output-file outputs/evaluation_results_gpt_4_1.json \
+  --rubric-file data/LiveMedBench_v202601.json \
+  --model-result-file outputs/gpt_results.json \
+  --output-file outputs/evaluation_results_gpt.json \
   --response-field model_response \
-  --resume
+  --resume (optional)
 ```
 
 ### 5. Compute Metrics
 
 ```bash
 python evaluate/metric_calc.py \
-  --rubric-file data/merged_data_rubric.json \
+  --rubric-file data/LiveMedBench_v202601.json \
   --evaluation-dir outputs \
   --output-file outputs/metric_results.txt
 ```
