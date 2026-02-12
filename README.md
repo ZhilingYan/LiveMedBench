@@ -12,6 +12,7 @@
 <p align="center">
   <a href="https://arxiv.org/abs/2602.10367">Paper</a> |
   <a href="https://huggingface.co/datasets/JuelieYann/LiveMedBench/">Dataset</a> |
+  <a href="https://zhilingyan.github.io/LiveMedBench/">Website</a> |
   <a href="#leaderboard">Leaderboard</a>
 </p>
 
